@@ -1,0 +1,98 @@
+html{
+  background-color: #B1D4E0;
+}
+#btn{
+  padding: 7px 20px 7px 20px;
+  font-family: Helvetica Neue, Helvetica;
+}
+table.fixed { table-layout:fixed; }
+table.fixed td { overflow: hidden; }
+
+table {
+  margin-top: 15px;
+  margin-bottom: 15px;
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+thead{
+  background-color : #203239;
+  color: white;
+
+}
+td, th {
+  border: 1px solid #203239;
+  text-align: left;
+  padding: 6px;
+}
+
+.container {
+  margin-left: 160px;
+}
+
+.LeftSideBar {
+  width: 160px;
+  height: 100vh;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #2F8BBF;
+  overflow-x: hidden;
+  padding-top: 20px;
+}
+
+.WindSpeedMenu{
+  display: table;
+}
+ul{
+  list-style:none;
+}
+
+a{
+  text-decoration:none;
+  cursor: pointer;
+  font-family: "Haas Grot Text R Web", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 20px;
+  color: black;
+}
+
+button {
+  background-color: #141E27;
+  border-radius: 8px;
+  border-width: 0;
+  color: white;
+  cursor: pointer;
+  font-family: "Haas Grot Text R Web", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 20px;
+  list-style: none;
+  padding: 10px 12px;
+  margin-bottom : 5px;
+  text-align: center;
+  transition: all 200ms;
+  vertical-align: baseline;
+}
+
+button:hover {
+  background-color: grey;
+  color:black;
+  }
+
+  ul{
+    display: none;
+  }
+
+  tr:nth-child(even) {background-color: #2E8BC0;}
+
+  #about{
+    display: none;
+  }
+
+  #OtherMeasurements_List{
+    display: none;
+    margin-bottom: 5vh;
+  }

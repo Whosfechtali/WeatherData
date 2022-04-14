@@ -1,0 +1,114 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Weather measurements</title>
+  <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+  <div class="container">
+  <div class="LeftSideBar">
+    <button onclick="Last30measurements()">Latest 30 measurements</button>
+    <div class="wind_directionMenu">
+      <button onclick="ShowHideDirection()" class="wind_directionButton">Wind Direction</button>
+
+  <div>
+    <ul id="wind_directionList">
+
+      <li class ="onclick" value="Last 20 Wind Direction Measurements" data-value="wind_direction/"><a href="#">Now</a></li>
+      <li class ="onclick" value="Last 24 hours Of Wind Direction Measurements" data-value="wind_direction/24"><a href="#">24 hours</a></li>
+      <li class ="onclick" value="Last 48 hours Of Wind Direction Measurements" data-value="wind_direction/48"><a href="#">48 hours</a></li>
+      <li class ="onclick" value="Last 72 hours Of Wind Direction Measurements" data-value="wind_direction/72"><a href="#">72 hours</a></li>
+      <li class ="onclick" value="One Week Of Wind Direction Measurements" data-value="wind_direction/168"><a href="#">1 week</a></li>
+    </ul>
+
+    </div>
+  </div>
+
+  <div class="wind_speedMenu">
+    <button onclick="ShowHideSpeed()">Wind Speed</button>
+
+<div>
+  <ul id="wind_speedList">
+
+    <li class ="onclick" value="Last 20 Wind Speed Measurements" data-value="wind_speed/"><a href="#">Now</a></li>
+    <li class ="onclick" value="Last 24 hours Of Wind Speed Measurements" data-value="wind_speed/24"><a href="#">24 hours</a></li>
+    <li class ="onclick" value="Last 48 hours Of Wind Speed Measurements" data-value="wind_speed/48"><a href="#">48 hours</a></li>
+    <li class ="onclick" value="Last 72 hours Of Wind Speed Measurements" data-value="wind_speed/72"><a href="#">72 hours</a></li>
+    <li class ="onclick" value="One Week Of Wind Speed Measurements" data-value="wind_speed/168"><a href="#">1 week</a></li>
+  </ul>
+
+  </div>
+</div>
+
+<div class="OtherMeasurementsMenu">
+  <button onclick="ShowHideOtherMeasurements()">Other Measurements</button>
+
+<div id="OtherMeasurements_List">
+
+  <select id="OtherMeasuremnts">
+<option  value="humidity_in">Humidity in</option>
+  <option value="humidity_out">Humidity out</option>
+  <option value="light">Light</option>
+  <option value="rain">Rain</option>
+  <option value="temperature">Temperature</option>
+  </select>
+
+  <select id="OtherMeasuremntsTime">
+</span>  <option value="">Now</option></span>
+  <option value="/24">24 hours</option>
+  <option value="/48">48 hours</option>
+  <option value="/72">72 hours</option>
+  <option value="/168">1 week</option>
+</select>
+<br />
+
+<button class="onclick" id="clicked" style="margin-top:10px">Submit</button>
+
+</div>
+</div>
+
+
+    <button onclick="About()">About</button>
+  </div>
+
+  <div>
+    <h1 id="header"></h1>
+    <table id="table">
+      <thead>
+        <tr>
+          <th>#</th>
+          <th>Date</th>
+          <th>Time</th>
+          <th>Type</th>
+          <th>Value</th>
+        </tr>
+      </thead>
+      <tbody id="TableBody">
+      </tbody>
+    </table>
+  <div id="about">
+      <h1>Name</h1>
+  <h2>
+    Mohamed El Fechtali
+  </h2>
+  <h1>Email</h1>
+  <h2>
+    Mohamed.elfechtali@tuni.fi
+  </h2>
+  <h1>Course</h1>
+  <h2>
+    3005
+  </h2>
+</div>
+<div>
+  <canvas id="myChart"></canvas>
+</div>  </div>
+</div>
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <script src="index.js"></script>
+</body>
+</html>
